@@ -11,6 +11,7 @@ import requests
 download_url = 'http://movie.douban.com/top250/'
 #解析页面内容
 def download_page(url):
+    #headers 是添加了用户代理，
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
     }
