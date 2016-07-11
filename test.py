@@ -27,6 +27,7 @@ def parse_html(html):
         movie_name = detail.find_all('span',attrs={'class','title'})
 
         for a in movie_name:
+            #get_text() 是取得除标签外的标签里面的内容
             movie_name_list.append(a.get_text())
             #movie_name_list.append(a.next.text)
 
